@@ -124,9 +124,9 @@ def run(csv_path):
     results["SD Meteor Score"] = std_m
 
     # BERT Score
-    # bert_m, bert_s = compute_bert_score(references, candidates)
-    # results["Mean BERTScore"] = bert_m
-    # results["SD BERTScore"] = bert_s
+    bert_m, bert_s = compute_bert_score(references, candidates)
+    results["Mean BERTScore"] = bert_m
+    results["SD BERTScore"] = bert_s
     
     return results 
 
